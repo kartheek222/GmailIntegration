@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Email"
+        android:ems="4"
+        />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_username"
+        android:layout_toRightOf="@+id/tv_username"
+        android:hint="Enter sender email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginTop="15dp"
+        android:text="Password"
+        android:ems="4"
+         />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:layout_toEndOf="@+id/tv_username"
+        android:layout_toRightOf="@+id/tv_password"
+        android:singleLine="true"
+        android:hint="Enter sender password"
+        android:inputType="textPassword" />
+    
+    <TextView android:id="@+id/tv_to_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:text="To"
+        android:layout_below="@+id/tv_password"
+        android:layout_marginTop="45dp"
+        />
+    
+    <EditText android:id="@+id/et_to_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter To email address"
+        android:layout_alignBottom="@+id/tv_to_address"
+        android:layout_toRightOf="@+id/tv_to_address"
+        android:layout_toEndOf="@+id/tv_to_address"
+        android:singleLine="true"
+        />
+    
+    <TextView android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:text="Subject"
+        android:layout_below="@+id/tv_to_address"
+        android:layout_marginTop="15dp"
+        />
+    
+    <EditText android:id="@+id/et_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_subject"
+        android:layout_toRightOf="@+id/tv_subject"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/tv_subject"
+        android:hint="Enter subject"
+        />
+    
+    <TextView android:id="@+id/tv_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:text="Message"
+        android:layout_below="@+id/tv_subject"
+        android:layout_marginTop="15dp"
+        />
+    
+    <EditText android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="Enter message"
+        android:layout_toRightOf="@+id/tv_message"
+        android:layout_toEndOf="@+id/tv_message"
+        android:layout_alignBottom="@+id/tv_message"
+        />
+    
+    <TextView android:id="@+id/tv_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:text="Attach"
+        android:layout_below="@+id/tv_message"
+        android:layout_marginTop="15dp"
+        />
+    
+     <EditText android:id="@+id/et_attachment"
+         android:layout_width="match_parent"
+         android:singleLine="true"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/tv_attachment"
+         android:layout_toEndOf="@+id/tv_attachment"
+         android:layout_alignBottom="@+id/tv_attachment"
+         android:hint="Add Attachment"
+         />
+
+     <Button android:id="@+id/send_email"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Send"
+         android:layout_below="@+id/et_attachment"
+         android:layout_marginTop="20dp"
+         android:layout_centerHorizontal="true"
+         />
+     
+     <Button android:id="@+id/btn_get_inbox"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="InboxCount"
+         android:layout_below="@+id/send_email"
+         android:layout_marginTop="20dp"
+         android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>
